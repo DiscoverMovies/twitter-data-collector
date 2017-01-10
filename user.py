@@ -2,10 +2,10 @@ import tweepy
 
 from tweepy import OAuthHandler
 
-access_token = "730811305951531008-L3E7hzt9cc0PbZgNjLSN2m8B9vXJBWZ"
-access_token_secret = "p86kIjEL7LCav6MizcU2hPxWP60JiYE9rqrZgOnuPsIzt"
-consumer_key = "RSadgT0OqyoMuQuaranwUyvat"
-consumer_secret = "9bWvcyOmMCHobWG737B3fOLkOG1x5Cq3DN3DRcnRT36oXu8xmW"
+access_token = 
+access_token_secret = 
+consumer_key = 
+consumer_secret = 
 
 def get_tweet(screen):
 
