@@ -1,6 +1,6 @@
 import pymysql
 
-db=pymysql.connect(host='localhost',user='root',password='asdf123!@')
+db=pymysql.connect(host='localhost',user='root',password='')
 cur=db.cursor()
 
 sql = 'CREATE DATABASE  IF NOT EXISTS TWEET_DATA'
