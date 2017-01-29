@@ -1,6 +1,7 @@
+import pymysql
+
 
 def initial(username,passwd):
-    import pymysql
 
     db=pymysql.connect(host='localhost',user=username,password=passwd)
     cur=db.cursor()

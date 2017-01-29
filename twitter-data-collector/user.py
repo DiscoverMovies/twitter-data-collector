@@ -26,26 +26,23 @@ access_token_secret = None
 consumer_key = None
 consumer_secret = None
 
+
 def get_tweet(screen):
-
-  auth=OAuthHandler(consumer_key,consumer_secret)
-  auth.set_access_token=(access_token,access_token_secret)
-  api=tweepy.API(auth)
-  tweets= []
-  newtweets=api.user_timeline(screen_name=screen,count=1)
-  tweets.extend(newtweets)
-  oldest =tweets[-1].id-1
-
-
-  while len(newtweets)>0:
-    newtweets=api.user_timeline(screen_name=screen,count=200,max_id=oldest)
-    for user in newtweets:
-      print(user.text)
-
-    tweets.extend(newtweets)
+    auth=OAuthHandler(consumer_key,consumer_secret)
+    auth.set_access_token=(access_token,access_token_secret)
+    api=tweepy.API(auth)
+    tweets= []
+    new_tweets=api.user_timeline(screen_name=screen,count=1)
+    tweets.extend(new_tweets)
+    oldest=tweets[-1].id-1
+    while len(new_tweets)>0:
+        new_tweets=api.user_timeline(screen_name=screen,count=200,max_id=oldest)
+        for user in new_tweets:
+          print(user.text)
+    tweets.extend(new_tweets)
     oldest = tweets[-1].id - 1
  
   
-if __name__== '__main__':
-  get_tweet('SidhinThomas')
+if __name__=='__main__':
+    get_tweet('SidhinThomas')
 
