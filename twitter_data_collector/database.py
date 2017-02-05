@@ -1,7 +1,7 @@
 import pymysql
 
 class database:
-    def initial(username,passwd):
+    def initial(self,username,passwd):
         db=pymysql.connect(host='localhost',user=username,password=passwd,use_unicode=True,charset="utf8")
         cur=db.cursor()
 

@@ -1,7 +1,7 @@
 import tweepy
 
-import database
-import twitter_data
+from twitter_data_collector import database
+from twitter_data_collector import twitter_data
 
 class DatabaseTwitter:
     def __init__(self,consumer_key,consumer_secret,access_token,access_token_secret,username,password,screen):
