@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8efd12d6-76ca-44bd-9604-be35e0a8a46c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_data_collector/database_create.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter_data_collector/twitter_database.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/twitter-data-collector.iml" afterPath="$PROJECT_DIR$/.idea/twitter-data-collector.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/insert_user_data.py" afterPath="$PROJECT_DIR$/example/insert_user_data.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twitter_data_collector/__init__.py" afterPath="$PROJECT_DIR$/twitter_data_collector/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twitter_data_collector/database.py" afterPath="$PROJECT_DIR$/twitter_data_collector/database.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twitter_data_collector/twitter_data.py" afterPath="$PROJECT_DIR$/twitter_data_collector/twitter_data.py" />
     </list>
@@ -33,7 +27,7 @@
       <file leaf-file-name="twitter_data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitter_data_collector/twitter_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-112">
+            <state relative-caret-position="153">
               <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -67,8 +61,8 @@
       <file leaf-file-name="insert_user_data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example/insert_user_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="111" selection-start-line="4" selection-start-column="111" selection-end-line="4" selection-end-column="111" />
+            <state relative-caret-position="119">
+              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -87,8 +81,8 @@
       <file leaf-file-name="database.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/twitter_data_collector/database.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+            <state relative-caret-position="357">
+              <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -378,6 +372,14 @@
       <option name="presentableId" value="Default" />
       <updated>1485235111160</updated>
     </task>
+    <task id="LOCAL-00001" summary="corrected errors">
+      <created>1486563245514</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1486563245514</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -413,6 +415,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="corrected errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="corrected errors" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -640,14 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitter_data_collector/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/twitter_data_collector/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-10">
@@ -660,15 +658,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/example/insert_user_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="111" selection-start-line="4" selection-start-column="111" selection-end-line="4" selection-end-column="111" />
+        <state relative-caret-position="119">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitter_data_collector/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/twitter_data_collector/twitter_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-112">
+        <state relative-caret-position="153">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
@@ -678,8 +684,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/twitter_data_collector/database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        <state relative-caret-position="357">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
           <folding />
         </state>
       </provider>

@@ -19,7 +19,7 @@ def get_tweet(self,auth):
         new_tweets=api.user_timeline(screen_name=self.screen,count=1,max_id=oldest)
         for user1 in new_tweets:
             print(user1.text)
-            database.insert_tweet(user.id,oldest,user1.text.encode('utf-8'),'root','asdf123!@')
+            database.insert_tweet(user.id,oldest,user1.text,'root','asdf123!@')
         tweets.extend(new_tweets)
         oldest = tweets[-1].id - 1
 

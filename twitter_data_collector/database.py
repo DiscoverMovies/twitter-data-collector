@@ -37,7 +37,7 @@ def initial(self):
 
 
 def insert_user(id,name,screen,place,status,username,passwd):
-    db = pymysql.connect(host='localhost', user=username, password=passwd)
+    db = pymysql.connect(host='localhost', user=username, password=passwd,db='tweet_data',charset='utf8')
     cur = db.cursor()
     sql='USE TWEET_DATA'
     cur.execute(sql)
@@ -47,7 +47,7 @@ def insert_user(id,name,screen,place,status,username,passwd):
 
 
 def insert_tweet(id,tid,text,username,passwd):
-    db=pymysql.connect(host='localhost', user=username, password=passwd)
+    db=pymysql.connect(host='localhost', user=username, password=passwd,db='tweet_data',charset='utf8')
     cur=db.cursor()
     sql='USE TWEET_DATA'
     cur.execute(sql)
