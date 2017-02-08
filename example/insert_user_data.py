@@ -1,6 +1,8 @@
 from twitter_data_collector import TwitterDataCollector
 
 
-a=TwitterDataCollector()
+a=TwitterDataCollector('730811305951531008-L3E7hzt9cc0PbZgNjLSN2m8B9vXJBWZ','p86kIjEL7LCav6MizcU2hPxWP60JiYE9rqrZgOnuPsIzt',
+                       'RSadgT0OqyoMuQuaranwUyvat','9bWvcyOmMCHobWG737B3fOLkOG1x5Cq3DN3DRcnRT36oXu8xmW','root','asdf123!@',
+                       'SidhinThomas')
 auth=a.set_database()
 a.insert_user_data(auth)
