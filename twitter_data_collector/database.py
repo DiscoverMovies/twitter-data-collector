@@ -53,7 +53,8 @@ def insert_tweet(id,tid,text,username,passwd):
     cur.execute(sql)
     sql = "INSERT INTO TWEETS(ID,TID) VALUES("+str(id)+","+str(tid)+")"
     cur.execute(sql)
-    sql="INSERT INTO TWEET_INFO(TID,TEXT) VALUES("+str(tid)+",'"+str(text)+"')"
+    sql="INSERT INTO TWEET_INFO(TID,TEXT) VALUES("+str(tid)+",'"+str(text).replace("'", "\\'")+"')"
+    print("SQL:",sql)
     cur.execute(sql)
     db.commit()
 
