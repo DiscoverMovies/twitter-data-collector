@@ -1,4 +1,5 @@
 import pymysql
+import unicodedata
 
 
 class DatabaseTwitter:
@@ -44,6 +45,7 @@ class DatabaseTwitter:
         cur = db.cursor()
         sql = 'USE TWEET_DATA'
         cur.execute(sql)
+
         sql = "INSERT INTO USER(ID,NAME,SCREEN_NAME,PLACE,STATUS) VALUES(" + str(
             data['id']) + ",'" + data['name'] + "','" + data['screen_name'] + "','" + data['place'] + "','" + data['status'] + "')"
         try:
@@ -61,7 +63,15 @@ class DatabaseTwitter:
         for tweet in tweets:
             sql = "INSERT INTO TWEETS(ID,TID) VALUES(" + str(data['id']) + "," + str(tweet.id) + ")"
             cur.execute(sql)
-            txt = str(tweet.text).encode('utf-8')
-            sql = "INSERT INTO TWEET_INFO(TID,TEXT) VALUES(" + str(tweet.id) + ",'" + txt.replace("'", "\\'") + "')"
+            txt = remove_non_ascii_1(str(tweet.text)).replace("'","\\'") # replace("'", "\\'")
+            # txt = unicodedata.normalize('NFKD', txt).encode('ascii', 'ignore')
+            print("Inserting: ",txt)
+            sql = "INSERT INTO TWEET_INFO(TID,TEXT) VALUES(" + str(tweet.id) + ",'" + str(txt) + "')"
+            print(str(sql))
             cur.execute(sql)
             db.commit()
+
+
+def remove_non_ascii_1(text):
+
+    return ''.join(i for i in text if ord(i)<128)
