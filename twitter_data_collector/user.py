@@ -44,5 +44,5 @@ def get_tweet(screen):
  
   
 if __name__=='__main__':
-    get_tweet('SidhinThomas')
+    get_tweet('username')
 
